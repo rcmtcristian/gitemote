@@ -1,0 +1,25 @@
+name: PR
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  pr_check:
+    runs-on: ubuntu-latest
+    name: A job to Post comment on PR
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2 # Add this step to check out your repository's code
+
+      # Add the npm install step here
+      - name: Install Dependencies
+        run: npm install
+
+      - name: PR Action
+        uses: ./ # Make sure you specify the correct path to your action here
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

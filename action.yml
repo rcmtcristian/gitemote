@@ -1,0 +1,13 @@
+name: 'PR emote generator'
+description: 'Post image as comments for PRs based on type of the PR'
+author: 'test'
+branding:
+  icon: 'camera'  
+  color: 'purple'
+inputs:
+  github-token:
+    description: 'Pass in secrets.GITHUB_TOKEN'
+    required: true
+runs:
+  using: 'node12'
+  main: 'src/index.js'
