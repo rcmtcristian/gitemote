@@ -1,6 +1,6 @@
 name: 'PR emote generator'
 description: 'Post image as comments for PRs based on type of the PR'
-author: 'test'
+author: 'Cristian Richards - rcmtcristian'
 branding:
   icon: 'camera'  
   color: 'purple'
