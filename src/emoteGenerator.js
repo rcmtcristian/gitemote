@@ -34,3 +34,9 @@ const generateEmote = (prTitle) => {
 };
 
 module.exports = generateEmote;
+
+//Example Usage
+// const prTitle = "Fix bug in login feature";
+// const emote = generateEmote(prTitle);
+// console.log(emote);
+// Output: ![emote](<random emote URL>)
