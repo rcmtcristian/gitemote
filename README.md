@@ -33,3 +33,7 @@ jobs:
 ```
 
 Now, whenever someone creates a new pull request in your repository with a title containing the specified keywords, GitEmote will react with the chosen emote.
+
+### Preview
+
+![F8SCTSEW0AE76Jc](https://github.com/rcmtcristian/gitemote/assets/20276785/5a9e29b0-759a-4478-bc7b-721702170dbf)
