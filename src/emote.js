@@ -23,6 +23,22 @@ const reviewEmotes = [
 
 const fixes = [`https://emojik.vercel.app/s/🤓_${getRandomEmote()}?size=128`];
 
+const docs = [
+  `https://emojik.vercel.app/s/📚_${getRandomEmote()}?size=128`,
+];
+
+const style = [
+  `https://emojik.vercel.app/s/💅_${getRandomEmote()}?size=128`,
+];
+
+const refactor = [
+  `https://emojik.vercel.app/s/🛠_${getRandomEmote()}?size=128`,
+];
+
+const test = [
+  `https://emojik.vercel.app/s/🧪_👻?size=128`,
+];
+
 const defaults = [
   `https://emojik.vercel.app/s/😁_${getRandomEmote()}?size=128`,
 ];
@@ -38,5 +54,9 @@ module.exports = {
   reviewEmotes,
   features,
   fixes,
+  docs,
+  style,
+  refactor,
+  test,
   defaults,
 };
