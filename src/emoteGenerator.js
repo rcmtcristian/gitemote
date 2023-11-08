@@ -23,13 +23,17 @@ const getEmoteUrl = (emoteArray) =>
  */
 const generateEmote = (prTitle) => {
   let emoteArray = defaults;
-
-  if (prTitle.match(/Feat|FEAT|feat/)) {
-    emoteArray = features;
-  } else if (prTitle.match(/Fix|FIX|fix/)) {
-    emoteArray = fixes;
+  const titleCase = prTitle.toLowerCase();
+  const keywordMatch = titleCase.match(/^(feat|fix)/);
+  const keyword = keywordMatch ? keywordMatch[0] : null;
+  switch (keyword) {
+    case 'feat':
+      emoteArray = features;
+      break;
+    case 'fix':
+      emoteArray = fixes;
+      break;
   }
-
   return `![emote](${getEmoteUrl(emoteArray)})`;
 };
 
