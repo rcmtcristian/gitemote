@@ -1,5 +1,5 @@
-name: 'PR emote generator'
-description: 'Post image as comments for PRs based on type of the PR'
+name: 'gitemote'
+description: 'Post emote reaction as comments for neew PRs'
 author: 'Cristian Richards - rcmtcristian'
 branding:
   icon: 'camera'  
