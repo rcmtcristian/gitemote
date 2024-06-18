@@ -2,8 +2,8 @@ name: 'Gitemote'
 description: 'Post emote reaction as comments for neew PRs'
 author: 'Cristian Richards - rcmtcristian'
 branding:
-  icon: 'camera'  
-  color: 'purple'
+  icon: 'thumbs-up'  
+  color: 'yellow'
 inputs:
   github-token:
     description: 'Pass in secrets.GITHUB_TOKEN'
